@@ -7,3 +7,51 @@
       {productId: 6 , productName: "กาแฟ เฮลตี้ฟู้ด", unitPrice: "140", thumbnail: "/imagse/product/6.jpg"}
 
 ]
+    {
+      "id":1,
+      "productId":"P001",
+      "productName":"สลัดผัก",
+      "uniPrice":"120",
+      "thumbnail":"/imagse/product/1.jpg"
+    },
+    {
+      "id":2,
+      "productId":"P002",
+      "productName":"ไก่ทอด",
+      "uniPrice":"90",
+      "thumbnail":"/imagse/product/2.jpg"
+    },
+    {
+      "id":3,
+      "productId":"P003",
+      "productName":"บิงชู",
+      "uniPrice":"200",
+      "thumbnail":"/imagse/product/3.jpg"
+    },
+    {
+      "id":4,
+      "productId":"P004",
+      "productName":"เฟรนฟราย",
+      "uniPrice":"140",
+      "thumbnail":"/imagse/product/4.jpg"
+    },
+    {
+      "id":5,
+      "productId":"P005",
+      "productName":"เค้ก 3 ชั้น",
+      "uniPrice":"200",
+      "thumbnail":"/imagse/product/5.jpg"
+    },
+    {
+      "id":6,
+      "productId":"P006",
+      "productName":"กาแฟ เฮลตี้ฟู้ด",
+      "uniPrice":"140",
+      "thumbnail":"/imagse/product/6.jpg"
+    }
+
+
+
+
+
+/*json-server --watch resources/data/db.json  --port 3050

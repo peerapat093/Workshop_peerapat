@@ -1,0 +1,107 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "สลัดผัก",
+      "uniPrice": "120",
+      "thumbnail": "/imagse/product/1.jpg"
+    },
+    {
+      "id": 2,
+      "productName": "ไก่ทอด",
+      "uniPrice": "90",
+      "thumbnail": "/imagse/product/2.jpg"
+    },
+    {
+      "id": 3,
+      "productName": "บิงชู",
+      "uniPrice": "200",
+      "thumbnail": "/imagse/product/3.jpg"
+    },
+    {
+      "id": 4,
+      "productName": "เฟรนฟราย",
+      "uniPrice": "140",
+      "thumbnail": "/imagse/product/4.jpg"
+    },
+    {
+      "id": 5,
+      "productName": "เค้ก 3 ชั้น",
+      "uniPrice": "200",
+      "thumbnail": "/imagse/product/5.jpg"
+    },
+    {
+      "id": 6,
+      "productName": "กาแฟ เฮลตี้ฟู้ด",
+      "uniPrice": "140",
+      "thumbnail": "/imagse/product/6.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "orderedDate": "2022-07-19T03:19:39.624Z",
+      "totalPrice": 230,
+      "orders": [
+        {
+          "product": {
+            "id": 2,
+            "productName": "ไก่ทอด",
+            "uniPrice": "90",
+            "thumbnail": "/imagse/product/2.jpg"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 4,
+            "productName": "เฟรนฟราย",
+            "thumbnail": "/imagse/product/4.jpg"
+          },
+          "quantity": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "orderedDate": "2022-07-19T03:36:58.290Z",
+      "totalPrice": 140,
+      "orders": [
+        {
+          "product": {
+            "id": 6,
+            "productName": "กาแฟ เฮลตี้ฟู้ด",
+            "uniPrice": "140",
+            "thumbnail": "/imagse/product/6.jpg"
+          },
+          "quantity": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "orderedDate": "2022-07-21T02:55:30.604Z",
+      "totalPrice": 340,
+      "orders": [
+        {
+          "product": {
+            "id": 4,
+            "productName": "เฟรนฟราย",
+            "uniPrice": "140",
+            "thumbnail": "/imagse/product/4.jpg"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 3,
+            "productName": "บิงชู",
+            "uniPrice": "200",
+            "thumbnail": "/imagse/product/3.jpg"
+          },
+          "quantity": 1
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

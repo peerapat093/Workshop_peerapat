@@ -1,42 +1,37 @@
 import './App.css';
-import Header from './components/Header';
-import Monitor from "./components/monitor/Monitor";
-import Footer from './components/Footer';
-// import ProductItem from './components/product/Productitem';
-import { Component } from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from "../src/containers/Home";
+import About from "./containers/About";
+import Order from "../src/containers/order/order";
+import Product from "../src/containers/product/product";
+import NotFoun from "../src/containers/error/NotFoun";
+
 
 class App extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {products : "" }
-  }
 
-  componentDidMount(){
-    this.setState({products : [
-      {productId: 1 , productName: "สลัดผัก", uniPrice: "120", thumbnail: "/imagse/product/1.jpg"},
-      {productId: 2 , productName: "ไก่ทอด", uniPrice: "90", thumbnail: "/imagse/product/2.jpg"},
-      {productId: 3 , productName: "บิงซู", uniPrice: "200", thumbnail: "/imagse/product/3.jpg"},
-      {productId: 4 , productName: "เฟรนฟราย", uniPrice: "140", thumbnail: "/imagse/product/4.jpg"},
-      {productId: 5 , productName: "เค้ก 3 ชั้น", uniPrice: "200", thumbnail: "/imagse/product/5.jpg"},
-      {productId: 6 , productName: "กาแฟ เฮลตี้ฟู้ด", uniPrice: "140", thumbnail: "/imagse/product/6.jpg"}
 
-    ]})
-  }
-  
-  render(){
-  return (
-    <div> 
-      <Header />
-    <Monitor products={this.state.products}/>
-      <Footer  company =  "kanaki" email = "odsatuk123@gmail.com" />
-        
-     
-      
-    </div>
-  );
-  }
-}  
 
+  renderRouter() {
+    return (
+
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/About" component={About} />
+        <Route exact path="/orders" component={Order} />
+        <Route exact path="/products" component={Product} />
+        <Route exact path="*" component={NotFoun} />
+      </Switch>
+
+
+    )
+  }
+  render() {
+    return (
+      <BrowserRouter>{this.renderRouter()}</BrowserRouter>
+    );
+  }
+}
 
 export default App;

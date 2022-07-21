@@ -1,11 +1,13 @@
 import React,{Component} from "react";
 import Productitem from "./Productitem";
 
+
+
 class ProductList extends Component {
 
     showProducts(){
             return( this.props.products && this.props.products.map(product => (
-                <Productitem key={product.productId} product={product} onAddOrder = {this.props.onAddOrder}/>
+                <Productitem key={product.id} product={product} onAddOrder =  {this.props.onAddOrder} onDelProduct={this.props.onDelProduct} onEditProduct={this.props.onEditProduct}/>
             ))
             );
     }
